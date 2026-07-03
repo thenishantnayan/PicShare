@@ -6,7 +6,14 @@ const postModel = require("./models/post.model");
 const upload = multer({storage : multer.memoryStorage()})
 const cors = require("cors")
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://pic-share-one.vercel.app/",
+    ],
+  })
+);
 app.use(express.json());
   
 
