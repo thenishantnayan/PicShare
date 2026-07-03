@@ -6,7 +6,7 @@ const CreatePost = () => {
   const handleSubmit = async (e) => {
     e.preventDefault(); //page not reload
     const formData = new FormData(e.target);
-    axios.post("http://localhost:3000/create-post",formData).then((res)=>{
+    axios.post("https://picshare-x0sb.onrender.com/create-post",formData).then((res)=>{
       navigate("/Feed")
     })
 
