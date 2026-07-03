@@ -1,18 +1,16 @@
-import {BrowserRouter as Router,Routes,Route } from 'react-router-dom'
-import CreatePost from './pages/createpost.jsx'
-import Feed from './pages/feed.jsx'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import CreatePost from "./pages/createpost";
+import Feed from "./pages/feed";
+
 const App = () => {
   return (
-    <div>
-      <Router>
-        <Routes>
-          <Route path="/create-post" element={<CreatePost />} />
-          <Route path="/Feed" element={<Feed />} />
-        </Routes>
-      </Router>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Feed />} />
+        <Route path="/create-post" element={<CreatePost />} />
+      </Routes>
+    </Router>
+  );
+};
 
-    </div>
-  )
-}
-
-export default App
+export default App;
