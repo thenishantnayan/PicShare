@@ -10,8 +10,9 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://pic-share-nu.vercel.app/",
+      "https://pic-share-nu.vercel.app",
     ],
+    credentials: true,
   })
 );
 app.use(express.json());
