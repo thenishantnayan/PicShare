@@ -10,7 +10,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://pic-share-one.vercel.app/",
+      "https://pic-share-nu.vercel.app/",
     ],
   })
 );
